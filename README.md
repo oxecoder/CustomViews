@@ -1,3 +1,3 @@
 # CustomViews
 
-## Horizontal Dot Progress Bar
+### Horizontal Dot Progress Bar

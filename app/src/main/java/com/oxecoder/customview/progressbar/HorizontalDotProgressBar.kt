@@ -62,7 +62,7 @@ class HorizontalDotProgressBar @JvmOverloads constructor(
 
     private fun startProgress() {
         val progressAnimation = ProgressAnimation()
-        progressAnimation.duration = 150
+        progressAnimation.duration = 1000
         progressAnimation.repeatCount = Animation.INFINITE
         progressAnimation.interpolator = DecelerateInterpolator()
         progressAnimation.setAnimationListener(object : Animation.AnimationListener {

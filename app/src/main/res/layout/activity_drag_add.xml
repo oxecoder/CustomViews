@@ -7,18 +7,18 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-                <com.google.android.material.appbar.AppBarLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="?attr/actionBarSize"
-                    android:fitsSystemWindows="true">
+        <!--                <com.google.android.material.appbar.AppBarLayout-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="?attr/actionBarSize"-->
+        <!--                    android:fitsSystemWindows="true">-->
 
-                    <com.google.android.material.appbar.CollapsingToolbarLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        app:layout_scrollFlags="scroll|exitUntilCollapsed">
-                    </com.google.android.material.appbar.CollapsingToolbarLayout>
+        <!--                    <com.google.android.material.appbar.CollapsingToolbarLayout-->
+        <!--                        android:layout_width="match_parent"-->
+        <!--                        android:layout_height="match_parent"-->
+        <!--                        app:layout_scrollFlags="scroll|exitUntilCollapsed">-->
+        <!--                    </com.google.android.material.appbar.CollapsingToolbarLayout>-->
 
-                </com.google.android.material.appbar.AppBarLayout>
+        <!--                </com.google.android.material.appbar.AppBarLayout>-->
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recycler_view"
@@ -31,12 +31,22 @@
             app:layout_constraintTop_toTopOf="parent"
             tools:listitem="@layout/item_item" />
 
-        <com.oxecoder.customview.dragadditem.DragToAddView
+
+        <com.google.android.material.bottomappbar.BottomAppBar
             android:layout_width="match_parent"
-            android:layout_height="300dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="bottom"
-            android:background="@color/colorPrimary"
-            app:layout_behavior=".dragadditem.BottomNavigationBehavior" />
+            android:backgroundTint="@android:color/transparent"
+            app:contentInsetStart="0dp"
+            app:elevation="0dp"
+            app:hideOnScroll="true">
+
+            <com.oxecoder.customview.dragadditem.DragToAddView
+                android:layout_width="match_parent"
+                android:background="@drawable/gradient_grey"
+                android:layout_height="100dp" />
+
+        </com.google.android.material.bottomappbar.BottomAppBar>
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 

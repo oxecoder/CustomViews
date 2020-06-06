@@ -25,19 +25,8 @@ class DragAddActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_drag_add)
-
-        Intent()
-
         binding.recyclerView.addItemDecoration(DividerItemDecoration(this, DividerItemDecoration.VERTICAL))
         binding.recyclerView.adapter = adapter
-
-//        binding.recyclerView.addOnScrollListener(object : RecyclerView.OnScrollListener() {
-//            override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
-//                super.onScrolled(recyclerView, dx, dy)
-//                val layoutManager = (recyclerView.layoutManager as LinearLayoutManager)
-//                val lastVisiblePosition = layoutManager.findLastVisibleItemPosition()
-//            }
-//        })
 
 //      add items to adapter
         val list = mutableListOf<String>()
